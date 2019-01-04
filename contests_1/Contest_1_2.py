@@ -23,6 +23,7 @@ def largest_rectangle_area(heights):
     max_area = 0
     if not heights:
         return max_area
+    # 在数组最后插入0，为了最后一定能执行第37行的面积运算
     heights.append(0)
     stack = [heights[0]]
     # 从数组的第二个元素开始遍历

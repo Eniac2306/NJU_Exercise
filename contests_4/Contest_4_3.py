@@ -53,7 +53,6 @@ while test_num > 0:
 
 # def mMaxMin(arr, m, length):
 #     dp = [[0 for i in range(51)] for i in range(51)]
-#     # dp[0][1] = 0
 #     for i in range(1, length + 1):
 #         dp[i][1] = dp[i - 1][1] + arr[i]
 #

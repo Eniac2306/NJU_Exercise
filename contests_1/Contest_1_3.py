@@ -13,10 +13,8 @@
 # 输出一个值。
 
 if __name__ == '__main__':
-    str_input = input()
+    arr = list(map(int, input().strip().split()))
     window_size = int(input())
-    arr = str_input.split(" ")
-    arr = [int(i) for i in arr]
     sum = 0
     for i in range(len(arr) - window_size + 1):
         sub_arr = arr[i:i + window_size]
