@@ -2,7 +2,7 @@
 def partition(nums, low, high):
     high_flag = True
     low_flag = False
-    pivot = nums[low]
+    pivot = nums[low]  # 记录第一个数，为此次排序的轴心点
     while low < high and low < len(nums) and high < len(nums):
         if high_flag:
             if nums[high] < pivot:
@@ -35,7 +35,7 @@ def quickSort(nums):
             arr.append(mid + 1)
             arr.append(high)
         while arr:
-            r = arr.pop()
+            r = arr.pop()  # 获取每次排序子部分的头尾（右边和左边）
             l = arr.pop()
             mid = partition(nums, l, r)
             if l < mid - 1:
