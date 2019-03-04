@@ -19,6 +19,7 @@ def bubble_sort(alist):
             break
     return alist
 
+
 li2 = []
 while True:
     try:
@@ -26,14 +27,13 @@ while True:
         li1 = [int(n) for n in str.split()]
         li = []
         for i in range(li1[0]):
-            li.append(li1[i+1])
+            li.append(li1[i + 1])
         li2.append(bubble_sort(li))
     except Exception:
         break
 for i in range(len(li2)):
     for j in range(len(li2[0])):
         if j != len(li2[0]) - 1:
-            print(li2[i][j],end=' ')
+            print(li2[i][j], end=' ')
         else:
             print(li2[i][j])
-
